@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linear Search</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <div class="panel left">
+      <button class="generate_numbers" onclick="Generate()">Generate array</button>
+
+      <label>Search for:</label>
+      <input type="text" id="searchValue" placeholder="Input"/>
+      
+      <button class="search_button" onclick="Search()">Search</button>
+
+      <label>result:</label>
+      <p class="result">Output</p>
+    </div>
+
+    <div class="panel right">
+      <h2>Generated Array</h2>
+      <div class="array-output" id="arrayOutput"></div>
+    </div>
+  </div>
+</body>
+</html>
