@@ -13,7 +13,8 @@ function Generate() {
         return this.join(', ');
     };
     document.getElementById('arrayOutput').innerText = arr;
-    document.querySelector('.result').innerText = 'Result: Generated array';
+    document.querySelector('.result-output').innerText = 'Array generated.';
+    document.querySelector('.search-btn').disabled = false;
 }
 
 function Search() {
@@ -21,9 +22,9 @@ function Search() {
     let result;
     const index = arr.indexOf(searchValue);
     if (index !== -1) {
-        result = `Number ${searchValue} found at index ${index + 1}`;
+        result = `Number ${searchValue} found at position ${index + 1}.`;
     } else {
-        result = `Number ${searchValue} not found`;
+        result = `Number ${searchValue} not found.`;
     }
-    document.querySelector('.result').innerText = `Result: ${result}`;
+    document.querySelector('.result-output').innerText = result;
 }

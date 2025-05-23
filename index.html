@@ -10,15 +10,15 @@
 <body>
   <div class="page">
     <div class="panel left">
-      <button class="generate_numbers" onclick="Generate()">Generate array</button>
+      <button class="generate-btn" onclick="Generate()">Generate Array</button>
 
-      <label>Search for:</label>
-      <input type="text" id="searchValue" placeholder="Input"/>
+      <label for="searchValue">Search for:</label>
+      <input type="text" id="searchValue" placeholder="Enter a number"/>
       
-      <button class="search_button" onclick="Search()">Search</button>
+      <button class="search-btn" onclick="Search()" disabled >Search</button>
 
-      <label>result:</label>
-      <p class="result">Output</p>
+      <label for="result">Result:</label>
+      <p class="result-output">Output</p>
     </div>
 
     <div class="panel right">
